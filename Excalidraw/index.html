@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   
+ <title>Café e tapioca company :o</title> <!---- o termo "café e tapioca" vem de um meme da internet, quis usar essa brincadeira para fazer o site --->
+<link rel="stylesheet" href="Coffe and tapioca.css"> <!--linkei o código com o css  -->
+</head> 
+<!--- o site está longe de ser bonito, mas o mais importante é a compreensão das linhas de código, foi bem util esse trabalho !--->
+<body> 
+
+    
+    <header> <!--- superior da site--->
+        <h1>Café e tapioca company :o</h1> <!--um nome bem autoexplicativo  -->
+       <button class ="botão alt tema" id="botão café"> Modo café </button> <!--adicionei o botáo e coloquei um identificador nele  -->
+    </header> 
+
+    <main > <!--- main é como o principal do site --->
+         <section id="portifólio cafeetapioca" class="principal aba ativa"> <!--a principal aba ativa do código com uma sessão -->
+          
+
+         <div class="macaco"> <!--conteiner com 4 divs  -->
+        <div class="bnt-aba" data-alvo="tapiocanormal"> <!--div para criar um quadrado com as informações e classificar ele   -->
+            <h3> Tapioca classica </h3> 
+            <img src="Wrapioca _Tapioca-Hidratada.jpg " alt="Tapioca clássica" class="imagemp"> <!--imagem com uma class pra arrumar no css-->
+            <p> Otima base para dietas, feita com goma de mandioca, alto em carboidratos e mais saudável que um pão!</p> <!--detalhes sobre a tapioca   -->
+            <span class="veja-mais">Ver detalhes ➔</span> <!--um span serve indicar um texto que chame a atenção de um clique -->
+        </div> 
+        <div class="bnt-aba" data-alvo="tapiocaqueijo"> <!--div para criar um quadrado com as informações e classificar ele  -->
+            <h3> Tapioca com queijo </h3> 
+            <img src="Tapiovo-de-Queijo_3.jpg " alt="Tapioca com queijo" class="imagemp"> <!--uma imagem com uma class pra arrumar no css -->
+            <span class="veja-mais">Ver detalhes ➔</span> <!--um span serve indicar um texto que chame a atenção de um clique -->
+            <p> A tapioca com queijo combina carboidrato de rápida absorção com proteínas e gorduras, promovendo saciedade duradoura e ajudando no controle do apetite.</p> <!--  -->
+        </div> 
+           <div class="bnt-aba" data-alvo="caféexpresso" > <!--div para criar um quadrado com as informações e classificar ele   -->
+            <h3> Café expresso </h3> 
+            <img src="that's-that-me-espresso.jpg " alt="Café expresso" class="imagemp"> <!--uma imagem com uma class pra arrumar no css   -->
+            <p> Classico café preto, presente no cotidiano dos brasileiros.</p> <!--detalhes sobre o café -->
+            <span class="veja-mais">Ver detalhes ➔</span> <!--um span serve indicar um texto que chame a atenção de um clique -->
+           </div> 
+           <div class = "bnt-aba" data-alvo="capuccino"> <!--div para criar um quadrado com as informações e classificar ele -->
+            <h3> Capuccino </h3> 
+            <img src="☕️_.jpg " alt="Capuccino" class="imagemp"> <!--uma imagem com uma class pra arrumar no css -->
+            <p> café expresso é composto por: achocolatado, leite em pó e café.</p> <!--detalhes sobre o capuccino -->
+            <span class="veja-mais">Ver detalhes ➔</span> <!--um span serve indicar um texto que chame a atenção de um clique -->
+           </div> 
+
+
+         </div> 
+            </section> <!--fechar a aba principal  -->
+    
+    <section id="tapiocanormal" class="segundo aba"> <!--segunda aba e a classificação -->
+        <button class="botão volta bnt-aba" data-alvo="portifólio cafeetapioca"> Voltar </button> <!--botão para voltar para a aba principal -->
+        <div class="divisória"> <!--div para criar um quadrado com as informações e classificar ele  -->
+        <h2> Tapioca classica </h2> 
+        <p>Otima base para dietas, feita com goma de mandioca, alto em carboidratos e mais saudável que um pão!</p> 
+        <img src="Wrapioca _Tapioca-Hidratada.jpg " alt="Tapioca clássica" class="imagemp"> <!--uma imagem com uma class pra arrumar no css  -->
+        </div> 
+        </section> <!--fechar a sessão da segunda aba, sem mais conteudos dentro dela  -->
+
+        <section id="tapiocaqueijo" class="terceiro aba"> <!--terceira aba e a classificação -->
+            <button class="botão volta bnt-aba" data-alvo="portifólio cafeetapioca"> Voltar </button> <!--botão para voltar para a aba principal -->
+            <div class="divisória"> <!--div para criar um quadrado com as informações e classificar ele  -->
+            <h2> Tapioca com queijo </h2> 
+            <p> Tapioca com queijo é um exelente mata fome no café da manhã pelo alta kcal.</p> 
+            <img src="Tapiovo-de-Queijo_3.jpg " alt="Tapioca com queijo" class="imagemp"> <!--uma imagem com uma class pra arrumar no css -->
+            </div> 
+            </section> <!--fechar a sessão da terceira aba, sem mais conteudos dentro dela  -->
+
+
+        <section id="caféexpresso" class="quarta aba"> <!-- quarta aba e a classificação -->
+            <button class="botão volta bnt-aba" data-alvo="portifólio cafeetapioca"> Voltar </button> <!--botão para voltar para a aba principal -->
+            <div class="divisória"> <!--div para criar um quadrado com as informações e classificar ele  -->
+            <h2> Café expresso </h2> <!--  -->
+            <p> CLassico café preto, presente no cotidiano dos brasileiros.</p> 
+            <img src="that's-that-me-espresso.jpg " alt="Café expresso" class="imagemp"> <!--uma imagem com uma class pra arrumar no css   -->
+            </div> 
+            </section> <!--fechar a sessão da quarta aba, sem mais conteudos dentro dela  -->
+
+            <section id="capuccino" class="quinta aba"> <!-- quinta aba e a classificação -->
+                <button class="botão volta bnt-aba" data-alvo="portifólio cafeetapioca"> Voltar </button> <!--botão para voltar para a aba principal -->
+                <div class="divisória"> <!--div para criar um quadrado com as informações e classificar ele  -->
+                <h2> Capuccino </h2> 
+                <p> café expresso é composto por: achocolatado, leite em pó e café.</p> 
+                <img src="☕️_.jpg " alt="Capuccino" class="imagemp"> <!--uma imagem com uma class pra arrumar no css   -->
+                </div> 
+                </section> <!--fechar a sessão da quinta aba, sem mais conteudos dentro dela  -->
+
+</main> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="Café tarpioca.js"></script> <!--linka o código ao java  -->
+
+</body> 
+</html> 

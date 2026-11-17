@@ -1,0 +1,109 @@
+:root { /* adiciona variaveis e cores da pagina normal, sem o modo escuro */
+     --fundosite: #FDFBF7; /* fundo do site para bege claro */
+     --cor-dstq: #C9A66B; /*cor bege para os botões, bordas e divisorias   */
+     --fundoclassmacaco: #FFFFFF; /*muda o fundo das divs conteiner do site */
+     --cortexto: #333333; /*cor cinza para o texto  */
+} 
+
+body.cfé { /*  adiciona variaveis e muda as cores normais para o modo escuro ou café  */
+     --fundosite: #221511; /* fundo do site marrom escuro */
+     --fundoclassmacaco: #140C0A; /* muda o fundo das divs conteiner do site para uma cor mais escura pra gerar destaque*/
+     --cortexto: #F5DEB3; /* cor bege para o texto no modo escuro */
+     --cor-dstq: #D2691E; /* cor laranja para os botões, bordas e divisorias no modo escuro */
+}
+
+* { /* regras gerais do site  */
+    margin: 0; /* todos os valores de margin zerados, não adiciona margem */
+    padding: 0; /*mesma coisa, zerados, não adiciona espaços internos  */
+    box-sizing: border-box; /*não deixa a margin e o padding alterarem as divs conteiner  */
+} 
+
+body { /* mexe no corpo do site */
+    background-color: var(--fundosite); /*cor de fundo definida na variavel "fundosite"  */
+    color: var(--cortexto); /*variavel "cortexto"  */
+    font-family: sans-serif; /* fonte de escrita  */
+    transition: background-color 0.4s ease, color 0.4s ease; /* transição na troca de modo claro para escuro  */
+}
+
+header { /*mexe no superior do site  */
+    padding: 20px 40px; /*adiciona espaçamento cima/baixo e dos lados */
+    display: flex; /* alinha o titulo e o botão na msm linha */
+    justify-content: space-between; /* distribui o espaço entre os elementos */
+    align-items: center; /* coloca tudo no centro  */
+} 
+
+main { /*mexe no principal do site  */
+    max-width: 1000px; /*  aumenta a largura para 1000 pixels */
+    margin: 40px auto; /* da 4o pixels de margem vertical e centraliza na horizontal */
+    padding: 0 20px; /* evita que o há dentro toque nas bordas */
+} 
+
+button, .botão { /*mexe nos botões e nas tags .botão  */
+    background-color: var(--cor-dstq); /*coloca a cor definida na variável no fundo do botão */
+    color: #111111; /* cor preta para o texto */
+    border: none; /* retira a borda do botão */
+    padding: 10px 20px; /*adiciona espaçamento no texto */
+    cursor: pointer; /* adiciona no ponteiro a forma de uma mãozinho */
+    border-radius: 8px; /*arredonda os cantinhos no botton  */
+    font-size: 16px; /*tamanho da fonte 16 pixels  */
+    font-weight: bold; /* coloca o texto em negrito */
+} 
+
+.volta { /*mexe no botão de volta  */
+    margin-bottom: 20px; /* cria um espaço abaixo do botão */
+} 
+
+.macaco { /*mexe no contêiner  */
+    display: grid; /* ativa as linhas */
+    grid-template-columns:repeat (auto-fit, minmax(220px, 1fr)); /*cria colunas com a minima largura de 220 pixels  */
+    gap: 20px; /*coloca 20 pixels nos conteinerss  */
+} 
+
+.macaco .bnt-aba { /*mexe no conteiner clicável   */
+    background-color:var(--fundoclassmacaco); /*aplica a cor de fundo da váriavel  */
+    padding: 20px; /* adiciona espaço interno no container */
+    border-radius: 12px; /* arredonda os cantinhos do container */
+    border-left: 6px solid var(--cor-dstq); /* cria uma faixa da cor bege nos conteiners */
+    box-shadow: 0 4px 8px rgba (0, 0, 0, 0.1); /* adicionei sombra leve */
+    cursor: pointer; /* deixa o cursor na forma de uma mãozinho */
+    display: flex; /* organiza tudo dentro do container */
+    flex-direction: column; /* alinha os titulos, imagens e textos */
+    gap: 12px; /* coloca 12 pixels de espaçamento  */
+    transition: transform 0.2s, background-color 0.4s; /*transição na mudança de modo  */
+} 
+
+img { /*mexe nas imagens*/
+    max-width: 450px; /*tamanho maximo de 450 pixels  */
+    width: 100%; /* a imagem ocupa todo conteiner */
+    object-fit: cover; /* coloca a imagem sem distorcer ela. */
+    height: 300px; /* altura de 300 pixels */
+    border-radius: 12px; /* arredonda os cantinhos da imagem */
+}
+
+.macaco .imagemp { /*classe da imagem nos conteiners da principal aba  */
+    height: 170px; /* tamanho de 170 pixels */
+} 
+
+.divisória { /* mexe nas divisórias nas abas secundárias*/
+    background-color: var(--fundoclassmacaco); /* coloca a cor de fundo da variável */
+    padding: 30px; /*espaçamento interno */
+    border-radius: 12px; /*  arredonda os cantinhos */
+    border-left: 6px solid var (--cor-dstq); /* cria a mesma faixa de cor bege nos conteiners */
+    display: flex; /* organiza o conteiner */
+     flex-direction: column; /* alinha os titulos, imagens e textos em forma de coluna */
+     align-items: center ; /* coloca as linhas no centro */
+    text-align: center ; /*  alinha os textos no centro*/
+    gap: 20px; /*  dá 20 pixels de espaçamento entre a imagem, titulo e texto */
+} 
+
+.macaco h3, .divisória h2 { /*mexe nos titulos da divisória e no conteiner  */
+    color: var(-- cor-dstq); /* coloca a cor bege da variável */
+} 
+
+.aba { /* mexe e controla a funcionalidade das 4 abas   */
+    display: none ; /* esconde, por natural, as 4 abas, só entra em uma quando der o click */
+} 
+
+.aba.ativa { /* aba ativa principal.   */
+    display: block ; /* torna visivel apenas a aba ativa */
+} 
